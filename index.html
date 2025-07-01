@@ -3,12 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
+    <title>Motivational Quote Generator</title>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <h1>Motivational quote generator</h1>
+    <div class="container">
+      <header>
+        <h1>Motivational Quote Generator</h1>
+        <p>Get a motivational quote based on your topic!</p>
+      </header>
+      <form id="quote-topic">
+        <label for="quote-input">What do you want the quote to be about?</label>
+        <input
+          type="text"
+          id="quotetopic-input"
+          placeholder="Topic of motivational quote"
+        />
+        <button type="submit">Generate</button>
+      </form>
+      <div id="quote-container">
+        <p id="quote-text">Enter a topic to get a motivational quote!</p>
+        <p id="quote-author"></p>
+    </div>
     <footer>
       <p>
         This project was coded by
@@ -21,7 +38,7 @@
           on GitHub</a
         >
         and
-        <a href="https://scplusprojectweatherapp.netlify.app/" target="_blank"
+        <a href="https://sc-motivational-quote-generator.netlify.app/" target="_blank"
           >hosted on Netlify</a
         >
       </p>
