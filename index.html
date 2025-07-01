@@ -11,7 +11,7 @@
     <div class="container">
       <header>
         <h1>Motivational Quote Generator</h1>
-        <p>Get a motivational quote based on your topic!</p>
+        <p class="description">Get a motivational quote based on your topic!</p>
       </header>
       <form id="quote-topic">
         <label for="quote-input">What do you want the quote to be about?</label>
@@ -19,12 +19,14 @@
           type="text"
           id="quotetopic-input"
           placeholder="Topic of motivational quote"
+          class="quotetopic-input"
         />
-        <button type="submit">Generate</button>
+        <button type="submit" class="quotetopic-button">Generate</button>
       </form>
-      <div id="quote-container">
+      <div class="quote-container" id="quote-container">
         <p id="quote-text">Enter a topic to get a motivational quote!</p>
         <p id="quote-author"></p>
+      </div>
     </div>
     <footer>
       <p>
@@ -38,7 +40,9 @@
           on GitHub</a
         >
         and
-        <a href="https://sc-motivational-quote-generator.netlify.app/" target="_blank"
+        <a
+          href="https://sc-motivational-quote-generator.netlify.app/"
+          target="_blank"
           >hosted on Netlify</a
         >
       </p>
