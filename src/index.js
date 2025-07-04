@@ -17,9 +17,10 @@ function generateQuote(event) {
   let prompt = `user instructions: generate a motivational or uplifting quote about ${instructions.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${key}`;
 
-  axios.get(apiUrl).then(displayQuote);
+  let generatingText = document.querySelector("#quote-text");
+  generatingText.innerHTML = `Generating quote about ${instructions.value}...`;
 
-  console.log(prompt);
+  axios.get(apiUrl).then(displayQuote);
 }
 
 let topicFrom = document.querySelector("#quote-topic");
